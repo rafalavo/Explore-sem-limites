@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --base-font: 'Mulish', sans-serif;
+
+  --white: #ffffff;
+  --light-gray: #f9f4fb;
+  --accent-color: #b52184;
+  --text-base-color: #312d64;
+  --gradient-background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+}
+
+body {
+  background: var(--light-gray);
+  font-family: var(--base-font);
+}
+
+.astronaut img {
+  width: 100%;
+}
+
+body h1 {
+  padding-top: 2.2rem;
+}
+
+footer {
+  background: var(--gradient-background);
+}
+
+section {
+  text-align: center;
+}
+
+a img {
+  padding-top: 3.5rem;
+  margin-bottom: 5rem;
+  width: 5.8rem;
+  height: 10.5rem;
+}
+
+header img {
+  width: 100%;
+}
+
+h1 {
+  color: var(--accent-color);
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 900;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: var(--text-base-color);
+}
+
+/* cards */
+main {
+  background: var(--gradient-background);
+  padding: 6rem 3.8rem 4.6rem;
+  display: grid;
+  gap: 5rem;
+}
+
+main .cards {
+  background-color: var(--light-gray);
+  padding: 2.6rem;
+  border-radius: 2rem;
+}
+
+/* Form section */
+section form {
+  padding: 6rem 3.8rem;
+}
+fieldset {
+  border: none;
+}
+
+button,
+input,
+fieldset,
+textarea {
+  font: var(--base-font);
+}
+
+#contact form h1 {
+  margin-bottom: 4.2rem;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  border: solid var(--text-base-color);
+  border-radius: 1.6rem;
+  margin: 2.4rem auto;
+  padding: 1.2rem 1.6rem 1.6rem;
+  color: var(--text-base-color);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+#contact button {
+  padding: 1.2rem 1.6rem 1.6rem;
+  background: var(--gradient-background);
+  color: var(--white);
+  border-radius: 1.6rem;
+  font-size: 2rem;
+  border: none;
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+  color: var(--text-base-color);
+}
+
+/* Footer Section */
+footer {
+  background: var(--gradient-background);
+
+  padding: 3.2rem 1.6rem;
+}
+
+footer p {
+  color: var(--white);
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* MEDIA  */
+
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 5.8rem;
+    line-height: 7.3rem;
+    margin: 0 0 0.8rem;
+  }
+
+  #hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.9rem 10.3rem 10.9rem;
+    max-height: 83.6rem;
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  #hero .hero-cta {
+    order: 1;
+    margin-top: 31.2rem;
+  }
+
+  #hero .astronaut {
+    order: 2;
+  }
+
+  #hero .hero-cta p {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 17.9rem;
+  }
+
+  #hero .hero-cta .button-down {
+    margin: 0;
+    justify-self: flex-end;
+  }
+
+  /* CARD */
+
+  #cards {
+    display: flex;
+    gap: 6rem;
+    padding: 6.4rem 11.1rem 8rem;
+  }
+}
+
+#cards p {
+  font-size: 2rem;
+}
+
+#cards .card {
+  padding: 3.2rem;
+}
+
+/* CONTACT */
+
+/* Contact Section */
+#contact {
+  display: flex;
+  align-items: center;
+  gap: 9.2rem;
+  padding: 0;
+  height: 62.2rem;
+  margin: 0 auto;
+  background: url(./assets/estrelas.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#contact form {
+  flex: 1;
+  margin-left: 10.9rem;
+}
+
+#contact .stars {
+  flex: 1;
+}
